@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: white;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.03);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    background-color: white;
+}
+nav ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav  ul li a{
+    height: 55px;
+    line-height: 50px;
+    margin: 3px;
+    padding: 0px 20px;
+    display: flex;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:black;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px 30px rgba(27, 32, 32, 0.3);
+    transition: all ease 0.3s;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#main .menu .fas,#main .menu .fab{
+    color: black;
+}
+.logo img{
+    height: 60px;
+    width: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.contact{
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(120, 196, 231);
+}
+ul li .fas,ul li .fab{
+    box-sizing: border-box;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-left: 5px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.model{
+    width: 500px;
+    height: 500px;
+}
+.content{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.text{
+    border-image-width: 500px;
+}
+.text h1{
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0px 0px 10px 10px;
+}
+.text p{
+    font-size: 22px;
+    padding-bottom: 50px;
+}
+.btn{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(27, 32, 32, 0.3);
+}
+.skills .align .down .container{
+    width:1000%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+.skills .html{
+    width: 80%;
+    background-color: #233067;
+    color: white;
+    text-align: right;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skills .css{
+    width: 70%;
+    background-color: #233067;
+    color: white;
+    text-align: right;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skills .js{
+    width: 40%;
+    background-color: #233067;
+    color: white;
+    text-align: right;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skills .py{
+    width:85%;
+    background-color: #233067;
+    color: white;
+    text-align: right;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skills .c{
+    width:75%;
+    background-color: #233067;
+    color: white;
+    text-align: right;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.skills .cpp{
+    width:60%;
+    background-color: #233067;
+    color: white;
+    text-align: right;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#learn{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.align{
+    display: flex;
+}
+.skills .align img{
+    width: 5%;
+    height: 2%;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+}
+.skills .txt{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+#studys .head,#friends .head,#contact .head,.forms .head{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+#studys .school{
+    display: flex;
+    justify-content: space-around;
+}
+#studys .school img{
+    width: 700px;
+    height: 400px;
+    border-radius: 25px;
+}
+#studys .school .school_details{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-indent: 1px;
+    color: black;
+}
+#studys .school .school_details a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#friends .align{
+    display: flex;
+    justify-content: space-around;
+}
+#friends .review,#friends .revie{
+    display: flex;
+}
+#friends .review .justify h4,#friends .revie .justify h4{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: black;
+}
+#friends .review h4,#friends .revie h4{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 40px;
+    color: black;
+    letter-spacing: 1px;
+}
+#friends .review img,#friends .revie img{
+    height: 130px;
+    width: 130px;
+    border-radius: 200px;
+    padding-right: 30px;
+}
+.stars .fas, .stars .far{
+    color: gold;
+}
+
+#contact img{
+    height: 100px;
+    width: 100px;
+}
+#contact .alignment{
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu-btn{
+    display: none;
+}
+.forms{
+    padding-left: 40px;
+}
+.forms input{
+    box-sizing: border-box;
+    width: 600px;
+    height: 40px;
+    font-size: 20px;
+    font-family:sans-serif;
+    border-radius: 30px;
+    border: none;
+}
+.forms button{
+    width:600px;
+    font-size: 25px;
+}
+.forms form label{
+    font-size: 25px;
+}
+
+@media(max-width:1140px){
+    .content{
+        width: 120%;
+    }
+   
+    #main .menu{
+        width: 90%;
+    }
+    .skills .align .down .container{
+        width: 600%;
+        height: 20px;
+        border-radius: 20px;
+        background-color: blanchedalmond;
+    }
+    #studys .school{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+    }
+    #studys .school img{
+        width: 800px;
+        height: 400px;
+        border-radius: 25px;
+        padding-left: 20px;
+    }
+    .image{
+        width: 400px;
+        height: 400px;
+    }
+    .text,.image{
+        margin: 10px;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+    #main .content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width:720px){
+    .skills .align .down .container{
+        width: 240%;
+    }
+    .skills .align img{
+        height: 50px;
+        width: 50px;
+    }
+    .skills #learn{
+        padding-top: 20px;
+    }
+    #studys .school{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+    }
+    #studys .school .school_details h3{
+        font-size: 22px;
+    }
+    #studys .school img{
+        width: 300px;
+        height: 200px;
+        border-radius: 25px;
+        padding-left: 20px;
+    }
+    #friends .align{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #friends .align .review,#friends .align .revie{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #friends .revie img{
+        padding-top: 40px;
+    }
+    .forms button{
+        width:270px;
+        font-size: 25px;
+    }
+    .forms input{
+        width: 270px;
+    }
+    .alignment{
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #main .content .text{
+        left:10%;
+        margin-top: 100px;
+    }
+    #main .content .text h1{
+        font-size: 25px;
+    }
+    nav{
+        justify-content: space-between;
+        height: 65px;
+        padding: 0px 30px;
+        width: 99%;
+    }
+    .logo img{
+        height: 35px;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        background-color: white;
+        border-bottom: 4px solid black;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu li{
+        width: 100%;
+    }
+    nav .menu li a{
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 25px;
+        border: 1px solid rgba(38,38,38,0.03);
+    }
+    nav .menu-icon {
+        cursor: pointer;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background 0.2 ease-out;
+        width: 18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: #333333;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width: 100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top: 5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top: -5px;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .menu-btn{
+        display: none;
+    }
+    nav .menu-btn:checked ~ .menu{
+        display: block;
+    }
+    #skills{
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+    .text{
+        width: 70%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% -50%);
+    }
+}
+
